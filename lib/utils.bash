@@ -32,8 +32,6 @@ sort_versions() {
     LC_ALL=C sort -t. -k 1,1 -k 2,2n -k 3,3n -k 4,4n -k 5,5n | awk '{print $2}'
 }
 
-https://github.com/aquasecurity/starboard/releases/download/v0.11.0/starboard_darwin_x86_64.tar.gz
-
 download_release() {
   local version filename url
   version="$1"
