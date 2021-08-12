@@ -43,7 +43,7 @@ download_release() {
   local arch
   [ "x86_64" = "$(uname -m)" ] && arch="x86_64"
 
-  url="$GH_REPO/releases/download/v${version}/starboard_${platform}-${arch}.tar.gz"
+  url="$GH_REPO/releases/download/v${version}/starboard_${platform}_${arch}.tar.gz"
 
   echo "* Downloading $TOOL_NAME release $version..."
   curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"
