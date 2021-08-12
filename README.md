@@ -40,7 +40,7 @@ asdf install starboard latest
 asdf global starboard latest
 
 # Now starboard commands are available
-starboard --version
+starboard version
 ```
 
 Check [asdf](https://github.com/asdf-vm/asdf) readme for more instructions on how to
